@@ -83,13 +83,6 @@ nav {
     color: #fff;
 }
 
-/* Estilos del botón de hamburguesa */
-.hamburger {
-    display: block; /* Mostrar el botón de hamburguesa */
-    cursor: pointer; /* Cambiar el cursor a un puntero cuando se pase sobre el botón */
-}
-
-
 /* Estilos del about section */
 .profile {
     text-align: center;
@@ -130,6 +123,7 @@ margin-bottom: 5px;
     flex-wrap: wrap; /* Permite que los artículos se ajusten en varias líneas */
     justify-content: center; /* Centra los artículos horizontalmente */
     gap: 20px; /* Espacio entre los artículos */
+    margin-top: 10px;
 }
 
 article {
@@ -158,7 +152,7 @@ article a{
 
 /* Estilos del footer */
 footer {
-    background-color:  rgb(33, 149, 238);;
+    background-color: rgb(33, 149, 238);;
     padding: 50px 0;
     position: relative;
     margin-top: 50px;
