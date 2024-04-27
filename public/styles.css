@@ -21,9 +21,10 @@ body {
     background-color:#030e2a;
     color:#ddd
 }
-[data-theme='dark'] header .logo{
+[data-theme='dark'] header .titulo{
     background-color:#030e2a;
-    color:#ddd
+    color:#ddd;
+
 }
 [data-theme='dark'] header a{
     background-color:#030e2a;
@@ -37,13 +38,15 @@ body {
     background-color:black;
     color:#ddd
 }
-
-/* Estilos del header y navbar */
+[data-theme='dark'] section .secciones{
+    background-color:black;
+    color:#ddd
+}
+               /* Estilos del header y navbar */
 header {
     background-color: rgb(33, 149, 238);
     padding: 20px 0;
-    color:#030e2a
-
+    color: #030e2a;
 }
 
 nav {
@@ -52,9 +55,10 @@ nav {
     justify-content: space-between;
 }
 
-.logo {
+.titulo {
+    display: flex;
     color: black;
-    font-size: 24px;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -68,8 +72,7 @@ nav {
 }
 
 .nav-links a {
-    color:black;
-
+    color: black;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -78,9 +81,12 @@ nav {
     color: #fff;
 }
 
+/* Estilos del botón de hamburguesa */
 .hamburger {
-    display: none; /* Ocultar por defecto en pantallas grandes */
+    display: block; /* Mostrar el botón de hamburguesa */
+    cursor: pointer; /* Cambiar el cursor a un puntero cuando se pase sobre el botón */
 }
+
 
 /* Estilos del about section */
 .profile {
@@ -98,16 +104,52 @@ nav {
 }
 
 /* Estilos del portfolio section */
-.projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.container {
+    background-color: white;
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 10px 20px; /* Agrega un espacio interno al contenedor */
 }
 
-.projects .project {
-    background-color: #333;
-    padding: 20px;
+.secciones {
+    margin-top: 10px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Espacio entre los elementos */
 }
+
+.box {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los artículos se ajusten en varias líneas */
+    justify-content: center; /* Centra los artículos horizontalmente */
+    gap: 20px; /* Espacio entre los artículos */
+}
+
+article {
+    flex: 1 1 250px; /* Permite que los artículos crezcan y se ajusten */
+    max-width: 250px; /* Ancho máximo de cada artículo */
+    text-align: center; /* Centra el contenido dentro de cada artículo */
+   
+}
+
+article img {
+    max-width: 100%; /* La imagen se ajusta al ancho del contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+}
+
+article a{
+
+    text-decoration: none; /* Quita subrayado de las etiquetas */
+  
+}
+article a{
+    margin-top: 10px;/* Agrega espacio superior entre la imagen y el texto */
+    font-size: 16px; /* Tamaño de letra */
+    color: darkslategray;
+ }
+
 
 /* Estilos del footer */
 footer {
@@ -117,26 +159,19 @@ footer {
     margin-top: 50px;
 }
 
-.social-icons {
-    list-style: none;
+  .footer-sns {
+    width: 50%;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
-}
-
-.social-icons li {
-    margin: 0 10px;
-}
-
-.social-icons a {
-    color: #ddd;
-    text-decoration: none;
-    font-size: 24px;
-    transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-    color: #fff;
-}
+    flex-direction: column;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    
+  }
 
 /* Estilos del botón flotante de WhatsApp */
 .whatsapp-float {
@@ -156,6 +191,9 @@ footer {
 .whatsapp-float:hover {
     background-color: #128C7E;
 }
+
+
+
 /* Estilos del botón de cambio de tema */
 .darkModeSwitch {
     background: #c5d2cd;
@@ -193,10 +231,17 @@ footer {
 }
 
 /* Estilos específicos para el modo oscuro */
-[data-theme='dark'] .darkModeSwitch {
-    background: #042d26de; /* Fondo oscuro para el interruptor */
+[data-theme='dark'] .darkModeSwitch::after {
+    background: #cad7f8; /* Color de fondo oscuro */
 }
 
 [data-theme='dark'] .darkModeSwitch span {
-    color: #fff; /* Color de los iconos en modo oscuro */
+    color: #ddd; /* Color del icono en modo oscuro */
+}
+
+@media only screen and (max-width:768px) {
+ 
+.nav-links {
+    display: none;
+}
 }

@@ -1,10 +1,14 @@
-// Botón de hamburguesa
+// Selecciona el botón de hamburguesa
 const hamburger = document.querySelector('.hamburger');
+// Selecciona el contenedor de las opciones de navegación
 const navLinks = document.querySelector('.nav-links');
 
+// Agrega un evento de clic al botón de hamburguesa
 hamburger.addEventListener('click', () => {
+    // Cuando se hace clic en el botón de hamburguesa, alternamos la clase 'open' en el contenedor de las opciones de navegación
     navLinks.classList.toggle('open');
 });
+
 
 // Modo oscuro
 
