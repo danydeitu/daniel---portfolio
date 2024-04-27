@@ -61,7 +61,10 @@ nav {
     font-size: 18px;
     font-weight: bold;
 }
-
+.titulo a {
+    color: black;
+    text-decoration: none;
+}
 .nav-links {
     list-style: none;
     display: flex;
