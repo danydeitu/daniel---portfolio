@@ -58,7 +58,7 @@ nav {
 .titulo {
     display: flex;
     color: black;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -69,12 +69,14 @@ nav {
 
 .nav-links li {
     margin-right: 20px;
+
 }
 
 .nav-links a {
     color: black;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-size: 18px;
 }
 
 .nav-links a:hover {
@@ -91,8 +93,8 @@ nav {
 /* Estilos del about section */
 .profile {
     text-align: center;
-    margin-top: 50px;
-    background-color:  whitesmoke;
+    margin-top: 5px;
+    background-color:  white;
     color:#030e2a;
 }
 
@@ -100,9 +102,12 @@ nav {
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
-
+.profile h2{
+margin-bottom: 5px;
+    font-size: 16px
+}
 /* Estilos del portfolio section */
 .container {
     background-color: white;
@@ -172,22 +177,64 @@ footer {
     align-items: center;
     
   }
+  .sns-links {
+    display: flex;
+ 
+  
 
+    margin: auto;
+    
+  }
+  .sns-links i{
+  margin:10px
+    
+  }
+  .linkedin,
+  .github,
+  .google {
+    color: white;
+    font-size: 30px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    padding-top:25px;
+    border-bottom: 4px solid transparent;
+  }
+  .footer-info{
+text-align: center;
+margin-bottom: 60px;
+  }
+  .footer-contact {
+    font-size: 13px;
+  
+  
+    margin: 0 auto;
+    text-align: center;
+    
+  }
+.scroll-to-top i{
+font-size: 20px;
+color:#fff;
+margin-left: 15px;
+}
 /* Estilos del botón flotante de WhatsApp */
 .whatsapp-float {
-    background-color: #25D366;
+    background-color: #41e681;
     color: #fff;
-    padding: 15px 20px;
+    padding: 4px 5px;
     border-radius: 50%;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    font-size: 16px;
+    font-size: 30px;
     text-decoration: none;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s ease;
 }
+.whatsapp-float i{
+   
+    color: #fff;
 
+}
 .whatsapp-float:hover {
     background-color: #128C7E;
 }
@@ -196,7 +243,7 @@ footer {
 
 /* Estilos del botón de cambio de tema */
 .darkModeSwitch {
-    background: #c5d2cd;
+    background: #41e681;
     display: flex;
     position: relative;
     cursor: pointer;
@@ -205,32 +252,32 @@ footer {
     border-radius: 1rem;
     align-items: center;
     justify-content: space-between;
-    padding: 5px; /* Ajustar el relleno */
-    width: 80px; /* Ajustar el ancho */
-    height: 40px; /* Ajustar la altura */
+    padding: 5px; /* Ajusta el relleno */
+    width: 80px; /* Ajusta el ancho */
+    height: 40px; /* Ajusta la altura */
 }
 
 /* Estilos para el icono del sol y la luna */
 .darkModeSwitch span {
-    color: #250202; /* Color del icono */
+    color: #150202; /* Color del icono */
 }
 
 /* Estilos del fondo del interruptor */
 .darkModeSwitch::after {
     display: block;
-    background: #042d26de;
-    width: 100%; /* Ajustar el ancho */
-    height: 100%; /* Ajustar la altura */
+    background: transparent;
+    width: 100%; /* Ajusta el ancho */
+    height: 100%; /* Ajusta la altura */
     position: absolute;
     top: 0;
     left: 0;
     right: unset;
-    border-radius: 1rem; /* Coincide con el radio de borde del botón */
+    border-radius: 1rem; /* radio de borde del botón */
     transition: all .5s ease;
     content: "";
 }
 
-/* Estilos específicos para el modo oscuro */
+/* Estilos específicos para el modo oscuro */ñ
 [data-theme='dark'] .darkModeSwitch::after {
     background: #cad7f8; /* Color de fondo oscuro */
 }
