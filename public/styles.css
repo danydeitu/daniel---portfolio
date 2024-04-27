@@ -18,16 +18,16 @@ body {
 }
 
 [data-theme='dark'] header{
-    background-color:#030e2a;
+    background-color:black;
     color:#ddd
 }
 [data-theme='dark'] header .titulo{
-    background-color:#030e2a;
+    background-color:black;
     color:#ddd;
 
 }
 [data-theme='dark'] header a{
-    background-color:#030e2a;
+    background-color:black;
     color:#ddd
 }
 [data-theme='dark'] section .profile{
@@ -205,6 +205,9 @@ margin-bottom: 60px;
     text-align: center;
     
   }
+.desing-by {
+    font-size: 18px;
+  }
 .scroll-to-top i{
 font-size: 20px;
 color:#fff;
@@ -285,4 +288,7 @@ margin-left: 15px;
 .nav-links {
     display: none;
 }
+.desing-by {
+    font-size: 14px;
+  }
 }
