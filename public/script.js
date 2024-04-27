@@ -64,7 +64,13 @@ scrollToTopBtn.addEventListener('click', () => {
 const languageSwitch = document.querySelector('.language-switch');
 
 languageSwitch.addEventListener('click', () => {
-    // Aquí agregar la lógica para cambiar el idioma
-    alert('Cambio de idioma realizado');
+    toggleLanguage(); // Función para cambiar de idioma
 });
-console.log("Script cargado");
+
+function toggleLanguage() {
+    const englishTexts = document.querySelectorAll('.english');
+    const spanishTexts = document.querySelectorAll('.spanish');
+
+    englishTexts.forEach(text => text.style.display = text.style.display === 'none' ? 'block' : 'none');
+    spanishTexts.forEach(text => text.style.display = text.style.display === 'none' ? 'block' : 'none');
+}
