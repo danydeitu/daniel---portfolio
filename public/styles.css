@@ -209,10 +209,17 @@ margin-bottom: 60px;
     font-size: 18px;
   }
 .scroll-to-top i{
-font-size: 20px;
+   
+font-size: 22px;
 color:#fff;
 margin-left: 15px;
 }
+.scroll-to-top i:hover{
+   cursor: pointer;
+  
+   color:#128C7E
+   
+    }
 /* Estilos del botón flotante de WhatsApp */
 .whatsapp-float {
     background-color: #41e681;
