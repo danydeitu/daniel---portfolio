@@ -304,7 +304,8 @@ margin-left: 15px;
     font-size: 14px;
   
 }
- footer p{
+ .design-by {
     font-size: 10px;
+    margin: auto;
   }
 }
