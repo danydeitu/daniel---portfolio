@@ -299,7 +299,12 @@ margin-left: 15px;
 .nav-links {
     display: none;
 }
-.design-by {
-    font-size: 12px;
+.titulo {
+   
+    font-size: 14px;
+  
+}
+ footer p{
+    font-size: 10px;
   }
 }
